@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Data Produk</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      display: flex;
+      min-height: 100vh;
+      background-color: #f4f4f4;
+    }
+
+    .sidebar {
+      width: 220px;
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin: 15px 0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .sidebar a:hover {
+      background-color: #34495e;
+    }
+
+    .main {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .navbar {
+      background-color: white;
+      padding: 10px 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .content {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    }
+
+    .content h2 {
+      margin-bottom: 20px;
+    }
+
+    .btn-add {
+      display: inline-block;
+      margin-bottom: 15px;
+      background-color: #2c3e50;
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #ecf0f1;
+    }
+
+    img {
+      max-width: 80px;
+      height: auto;
+    }
+
+    .action-btn {
+      padding: 5px 10px;
+      margin-right: 5px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      color: white;
+    }
+
+    .edit-btn {
+      background-color: #3498db;
+    }
+
+    .delete-btn {
+      background-color: #e74c3c;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>Admin</h2>
+    <a href="admin.html">Dashboard</a>
+    <a href="product.html">Produk</a>
+    <a href="kategori.html">Kategori</a>
+    <a href="#">cart</a>
+    <a href="#">pembayaran</a>
+    <a href="#">Logout</a>
+  </div>
+
+  <div class="main">
+    <div class="navbar">
+      <h3>Produk</h3>
+      <span>Halo, Admin</span>
+    </div>
+
+    <div class="content">
+      <h2>Daftar Produk</h2>
+      <a href="tambahproduct.html" class="btn-add">+ Tambah Produk</a>
+
+      <table>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Id</th>
+            <th>Nama Produk</th>
+            <th>Harga</th>
+            <th>Kategori</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>5</td>
+            <td>Tour Gunung Bromo</td>
+            <td>850000.00</td>
+            <td>Elektronik</td>
+            <td>
+              <button class="action-btn edit-btn">Edit</button>
+              <button class="action-btn delete-btn">Hapus</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>6</td>
+            <td>Wisata Candi Borobudur</td>
+            <td>1250000.00</td>
+            <td>Fashion</td>
+            <td>
+              <button class="action-btn edit-btn">Edit</button>
+              <button class="action-btn delete-btn">Hapus</button>
+            </td>
+          </tr>
+          <!-- Tambahkan baris lain sesuai kebutuhan -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Kategori</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+
+      body {
+        display: flex;
+        min-height: 100vh;
+        background-color: #f4f4f4;
+      }
+
+      .sidebar {
+        width: 220px;
+        background-color: #2c3e50;
+        color: white;
+        padding: 20px;
+      }
+
+      .sidebar h2 {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .sidebar a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        margin: 15px 0;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      .sidebar a:hover {
+        background-color: #34495e;
+      }
+
+      .main {
+        flex: 1;
+        padding: 20px;
+      }
+
+      .navbar {
+        background-color: white;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .content {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .content h2 {
+        margin-bottom: 20px;
+      }
+
+      .btn-add {
+        display: inline-block;
+        margin-bottom: 15px;
+        background-color: #2c3e50;
+        color: white;
+        padding: 10px 15px;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        text-align: left;
+        padding: 10px;
+        border: 1px solid #ddd;
+      }
+
+      th {
+        background-color: #ecf0f1;
+      }
+
+      button {
+        padding: 5px 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-right: 5px;
+      }
+
+      .edit-btn {
+        background-color: #3498db;
+        color: white;
+      }
+
+      .delete-btn {
+        background-color: #e74c3c;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <h2>Admin</h2>
+      <a href="admin.html">Dashboard</a>
+      <a href="product.html">Produk</a>
+      <a href="kategori.html">Kategori</a>
+      <a href="#">cart</a>
+      <a href="#">Pengguna</a>
+      <a href="#">Logout</a>
+    </div>
+
+    <div class="main">
+      <div class="navbar">
+        <h3>Kategori</h3>
+        <span>Halo, Admin</span>
+      </div>
+
+      <div class="content">
+        <h2>Data Kategori</h2>
+        <a href="tambahkategori.html" class="btn-add">+ Tambah Kategori</a>
+
+        <table>
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Nama Kategori</th>
+              <th>Deskripsi</th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Wisata Alam</td>
+              <td>Destinasi yang menawarkan keindahan alam Indonesia</td>
+              <td>
+                <button class="edit-btn">Edit</button>
+                <button class="delete-btn">Hapus</button>
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Wisata Sejarah</td>
+              <td>Destinasi yang memiliki nilai sejarah dan budaya</td>
+              <td>
+                <button class="edit-btn">Update</button>
+                <button class="delete-btn">Hapus</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

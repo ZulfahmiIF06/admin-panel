@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tambah Kategori</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      display: flex;
+      min-height: 100vh;
+      background-color: #f4f4f4;
+    }
+
+    .sidebar {
+      width: 220px;
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin: 15px 0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .sidebar a:hover {
+      background-color: #34495e;
+    }
+
+    .main {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .navbar {
+      background-color: white;
+      padding: 10px 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .content {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+      max-width: 500px;
+      margin: auto;
+    }
+
+    .content h2 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .form-group button {
+      background-color: #2c3e50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .form-group button:hover {
+      background-color: #34495e;
+    }
+
+    .form-group a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #2c3e50;
+      text-decoration: none;
+    }
+
+    .form-group a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>Admin</h2>
+    <a href="admin.html">Dashboard</a>
+    <a href="product.html">Produk</a>
+    <a href="kategori.html">Kategori</a>
+    <a href="#">cart</a>
+    <a href="#">Pengguna</a>
+    <a href="#">Logout</a>
+  </div>
+
+  <div class="main">
+    <div class="navbar">
+      <h3>Tambah Kategori</h3>
+      <span>Halo, Admin</span>
+    </div>
+
+    <div class="content">
+      <h2>Form Tambah Kategori</h2>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="nama">Nama Kategori</label>
+          <input type="text" id="nama" name="nama" required>
+        </div>
+
+        <div class="form-group">
+          <button type="submit">Simpan</button>
+          <a href="kategori.html">← Kembali ke Daftar Kategori</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
